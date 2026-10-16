@@ -1,0 +1,17 @@
+# Despliegue del backend en Railway desde la raiz del repositorio.
+# Compila el proyecto Spring Boot que esta en la carpeta backend/.
+
+# Etapa 1: compilar con Maven
+FROM maven:3.9-eclipse-temurin-21 AS build
+WORKDIR /app
+COPY backend/pom.xml .
+RUN mvn -q dependency:go-offline
+COPY backend/src ./src
+RUN mvn -q package -DskipTests
+
+# Etapa 2: imagen liviana solo con el .jar
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY --from=build /app/target/gestion-medica.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
