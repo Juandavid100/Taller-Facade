@@ -18,7 +18,7 @@ public class InicioController {
         Map<String, Object> info = new LinkedHashMap<>();
         info.put("proyecto", "Sistema de Gestion Medica - Taller Patron Facade");
         info.put("estado", "ok");
-        info.put("integrantes", List.of("Juan David Moreno", "Campiño", "Andre"));
+        info.put("integrantes", List.of("Juan David Moreno", "David Campiño", "Andres Delgado"));
         info.put("endpoints", List.of(
                 "POST /api/clinica/paciente",
                 "POST /api/clinica/cita",

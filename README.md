@@ -8,8 +8,8 @@ Portal para pacientes de una clínica: agendar citas, ver la historia clínica, 
 | Integrante | Parte |
 | --- | --- |
 | Juan David Moreno | Backend: base del proyecto, `PacienteService`, `AgendaService`, `ClinicaFacade`, controlador REST, despliegue en Railway |
-| Campiño | Backend: `HistoriaClinicaService`, `PrescripcionService`, `LaboratorioService` y sus pruebas |
-| Andre | Frontend en React: login, dashboard, agendar cita, historia clínica, laboratorio, despliegue en Vercel |
+| David Campiño | Backend: `HistoriaClinicaService`, `PrescripcionService`, `LaboratorioService` y sus pruebas |
+| Andres Delgado | Frontend en React: login, dashboard, agendar cita, historia clínica, laboratorio, despliegue en Vercel |
 
 ## URLs en producción
 
