@@ -1,5 +1,6 @@
 // Cliente HTTP del portal. Todas las llamadas van a los endpoints de la ClinicaFacade.
-const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8080').replace(/\/$/, '');
+// URL del backend en Railway. Se puede cambiar con la variable VITE_API_URL (por ejemplo para pruebas locales).
+const API_URL = (import.meta.env.VITE_API_URL || 'https://taller-facade-production.up.railway.app').replace(/\/$/, '');
 
 async function request(path, options = {}) {
   let response;
