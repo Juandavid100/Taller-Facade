@@ -13,8 +13,8 @@ Portal para pacientes de una clínica: agendar citas, ver la historia clínica, 
 
 ## URLs en producción
 
-- Frontend (Vercel): _pegar aquí la URL_
-- Backend (Railway): _pegar aquí la URL_
+- Frontend (Vercel): https://taller-facade.vercel.app
+- Backend (Railway): https://taller-facade-production.up.railway.app
 
 Usuario de prueba: documento **1085000000**, contraseña **demo123**.
 
